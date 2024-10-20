@@ -6,7 +6,19 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+
+app.use(cors (
+
+{
+
+origin: ["https://deploy-mern-1whq.vercel.app"], 
+  methods: ["POST", "GET"],
+  credentials: true
+
+}
+
+credentials: true
 
 const PORT = 3001;
 
